@@ -7,13 +7,11 @@ set expandtab
 set number
 set ruler
 set clipboard=unnamed
+set hlsearch
 set noswapfile
 
 colorscheme peachpuff
 highlight Comment ctermfg=darkgreen
 
-" Use ctrl-[hjkl] to select the active split!
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
+let &t_SI = "\e[3 q"
+let &t_EI = "\e[2 q"
